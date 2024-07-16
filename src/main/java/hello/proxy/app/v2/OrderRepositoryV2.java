@@ -1,8 +1,6 @@
-package hello.proxy.app.v1;
+package hello.proxy.app.v2;
 
-public class OrderRepositoryViImpl implements OrderRepositoryV1 {
-
-    @Override
+public class OrderRepositoryV2 {
     public void save(String itemId) {
         //저장로직
         if (itemId.equals("ex")){

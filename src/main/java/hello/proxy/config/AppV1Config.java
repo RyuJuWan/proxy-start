@@ -4,8 +4,6 @@ import hello.proxy.app.v1.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import javax.swing.plaf.BorderUIResource;
-
 @Configuration
 public class AppV1Config {
 
@@ -20,6 +18,6 @@ public class AppV1Config {
 
     @Bean
     public OrderRepositoryV1 orderRepositoryV1(){
-        return new OrderRepositoryViImpl();
+        return new OrderRepositoryV1Impl();
     }
 }
